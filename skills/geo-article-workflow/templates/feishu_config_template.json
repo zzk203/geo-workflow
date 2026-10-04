@@ -1,0 +1,40 @@
+{
+    "_说明": "飞书导入脚本通用配置模板。复制到项目目录后修改即可。",
+
+    "app_id": "<YOUR_APP_ID>",
+    "app_secret": "<YOUR_APP_SECRET>",
+
+    "base_dir": "<修改为项目问题集目录的绝对路径>",
+    "article_subdir": "文章",
+    "feishu_domain": "<your-tenant>.feishu.cn",
+
+    "oauth_port": 8080,
+    "oauth_timeout": 120,
+    "scope": "drive:drive docx:document docs:document:import",
+
+    "token_file": "feishu_tokens.json",
+    "import_poll_interval": 2,
+    "import_poll_max_attempts": 60,
+
+    "set_permissions": true,
+    "permission_body": {
+        "security_entity": "anyone_can_edit",
+        "link_share_entity": "anyone_editable"
+    },
+
+    "folder_map": {
+        "<本地目录名1>": "<飞书文件夹token1>",
+        "<本地目录名2>": "<飞书文件夹token2>"
+    },
+
+    "files_whitelist": null,
+
+    "image_dir": "<修改为项目图片目录的绝对路径>",
+    "image_handling": "upload",
+    "_image_handling_options": {
+        "upload": "上传图片并插入到文档中对应位置（推荐）",
+        "placeholder": "替换为「[图片：alt文字]」占位文字",
+        "strip": "完全删除图片标记，不留痕迹",
+        "keep": "保留原始标记"
+    }
+}

@@ -1,0 +1,29 @@
+# 依赖与构建产物
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+dist/
+build/
+
+# 凭证与登录态（严禁提交）
+feishu_tokens.json
+*.token
+*.credentials*
+.env
+.env.*
+平台登录状态*.json
+*-publish_state.json
+
+# 批次产物（文章、图片、日志、汇总）
+articles/
+发布汇总.tsv
+logs/
+*.log
+*.stdout.log
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
